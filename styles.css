@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.property {
+    margin-bottom: 20px;
+}
+
+.property img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    /* Add this CSS for the animated name */
+
+header h1 {
+    animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+/* Add this CSS for responsive design */
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #hero {
+        padding: 80px 10px;
+    }
+}
